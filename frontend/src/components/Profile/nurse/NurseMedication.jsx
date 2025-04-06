@@ -77,7 +77,7 @@ function NurseMedication() {
               >
                 {patients.map((value, index) => {
                   return (
-                    <option key={index} value={value.email}>
+                    <option key={index} value={value}>
                       {value.userName}
                     </option>
                   );

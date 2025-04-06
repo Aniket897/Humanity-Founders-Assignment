@@ -27,6 +27,7 @@ function DoctorReview() {
         .get("/nurse/get-allNurses")
         .then((response) => {
           setNurses(response.data);
+          setEmail(response.data[0].email);
         })
         .catch((error) => {
           Swal.fire({

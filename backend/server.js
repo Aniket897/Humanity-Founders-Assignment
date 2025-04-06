@@ -17,12 +17,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(corsMiddleware);
 
-app.use("/auth",limiter, authController);
-app.use("/user",limiter, userController);
-app.use("/doctor",limiter, doctorController);
-app.use("/nurse",limiter, nurseController);
-app.use("/appointment",limiter, appointmentController);
-app.use("/admin",limiter, adminController);
+app.use("/auth", authController);
+app.use("/user", userController);
+app.use("/doctor", doctorController);
+app.use("/nurse", nurseController);
+app.use("/appointment", appointmentController);
+app.use("/admin", adminController);
 app.use(errorHandlerMiddleware);
 
 (async () => {

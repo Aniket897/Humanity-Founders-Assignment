@@ -181,7 +181,7 @@ function AdminDoctor() {
           </div>
         </div>
         {isCreate && (
-          <div className="absolute h-[78%] w-[79%] z-50 bg-white">
+          <div className="absolute h-screen w-screen z-50 bg-white">
             <form className="flex flex-col w-full h-full justify-center gap-4 items-center">
               <div className="flex flex-col w-[40%] items-center ">
                 <p className="">Enter Doctors Name:</p>
